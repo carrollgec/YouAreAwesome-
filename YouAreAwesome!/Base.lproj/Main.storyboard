@@ -44,7 +44,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="messageLabel" destination="b5g-Pn-8Nm" id="Xvc-ck-w1q"/>
+                        <outlet property="messageLabel" destination="b5g-Pn-8Nm" id="4JH-ww-Y7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
