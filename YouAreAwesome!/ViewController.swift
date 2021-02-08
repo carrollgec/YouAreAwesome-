@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     var imageNumber = 0
     var messageNumber = 0
+    let totalNumberImages = 9
     
     
     override func viewDidLoad() {
@@ -26,21 +27,23 @@ class ViewController: UIViewController {
         let messages = ["You Are Awesome",
                         "You are Great",
                         "You Are Fantastic!",
-                        "Fabulous? That's You!" ]
-        messageLabel.text = messages[messageNumber]
-        messageNumber += 1
-        if messageNumber == messages.count{
-            messageNumber = 0
-        }
+                        "When The Genuis Bar Needs Help, They Call You!",
+                        "Fabulous? That's You!",
+                        "You've Got the Design  Skills of Jony Ive"]
+        messageLabel.text = messages[Int.random(in: 0...messages.count-1)]
+        imageView.image = UIImage(named: "image\(Int.random(in: 0...totalNumberImages))")
+
+//        messageNumber += 1
+//        if messageNumber == messages.count{
+//            messageNumber = 0
+//        }
         
         //let imageName = "image" + String(imageNumber)
-        
-        let imageName = "image\(imageNumber)"
-        imageView.image = UIImage(named: imageName)
-        imageNumber = imageNumber + 1
-        if imageNumber == 10{
-            imageNumber=0
-        }
+//        imageView.image = UIImage(named: imageName)
+//        imageNumber = imageNumber + 1
+//        if imageNumber == 10{
+//            imageNumber=0
+//        }
         
 //
 //        if messageLabel.text == awesomeMessage{
